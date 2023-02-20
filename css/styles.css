@@ -482,7 +482,7 @@ body{
     color: #E7E9FC;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: calc(24/16);
     color: #FFFFFF;
     display: block;
     letter-spacing: 0.02em;
@@ -522,7 +522,7 @@ outline-color: var(--accent-txt-cl);
 .subscribe-input::placeholder{
     font-weight: 400;
     font-size: 12px;
-    line-height: 24px;
+    line-height: calc(24/12);
     letter-spacing: 0.04em;
 
 color: rgba(255, 255, 255, 0.6);
@@ -532,16 +532,15 @@ color: rgba(255, 255, 255, 0.6);
     
     padding: 8px 24px;
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: var(--accent-bg-cl);
     color: var(--other-txt-cl);
     border-radius: 4px;
     border: none;
     cursor: pointer;
     transition: var(--trns-fast);
-    
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
@@ -596,7 +595,7 @@ align-items: center;
     border-radius: 4px;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 400ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px, 24px;
+    padding: 72px 24px 24px;
     
 
 }
@@ -631,17 +630,12 @@ align-items: center;
     
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    
+    line-height: calc(24/16);
     display: block;
-    padding-top: 72px;
     text-align: center;
     
 }
 .booking-form{
-    margin-bottom: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
     margin-top: 16px;
     
 }
@@ -650,7 +644,7 @@ align-items: center;
 .modal-form-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: calc(14/12);
     color: var(--light-slate);
     letter-spacing: 0.01em;
     margin-bottom: 4px;
@@ -716,7 +710,7 @@ align-items: center;
 .modal-form-comment::placeholder{
     font-weight: 400;
     font-size: 12px;
-    line-height: 16px;
+    line-height: calc(16/12);
     color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-agreement{
@@ -750,7 +744,7 @@ align-items: center;
     font-size: 12px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 16px;  
+    line-height: calc(16/12);  
     color: var(--dark-grey);
     user-select: none;
 }
@@ -762,7 +756,7 @@ align-items: center;
     width: 169px;  
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: calc(24/16);
     color: var(--other-txt-cl);
     display: block;
     align-items: center;
